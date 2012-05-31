@@ -194,7 +194,7 @@ module DataMapper
       #     property :zip_code, String
       #
       #     validates_format_of :email, :as => :email_address
-      #     validates_format_of :zip_code, :with => /^\d{5}$/
+      #     validates_format_of :zip_code, :with => /\A\d{5}\z/
       #
       #     # a call to valid? will return false unless:
       #     # email is formatted like an email address
